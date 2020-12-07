@@ -46,7 +46,7 @@ parser.add_argument('-sf', '--save-freq', type=int, default=SAVE_FREQ)
 args = parser.parse_args()
 
 # setup model & optimizer
-model = models.Model('data/obj/sphere/sphere_642.obj', args=args)
+model = models.Model('data/obj/sphere_642.obj', args=args)
 model.eval()
 
 print(args.model_directory)

@@ -8,7 +8,9 @@ bash download_dataset.sh
 # 训练
 
 ```
-git clone git@github.com:Jittor/jrender.git
+git clone https://github.com/Jittor/shapenet-reconstruction-jittor.git
+cd shapenet-reconstruction-jittor
+git clone https://github.com/Jittor/jrender.git
 mv jrender jrender-bak
 mv jrender-bak/jrender .
 python train.py -eid rcon
@@ -16,7 +18,7 @@ python train.py -eid rcon
 
 # 测试
 ```
-python train.py -eid rcon -d 'data/results/models/recon/checkpoint_0250000.pth.tar'
+python test.py -eid test -d 'data/results/models/recon/checkpoint_0250000.pkl'
 ```
 
 # 速度测试

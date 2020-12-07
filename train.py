@@ -71,7 +71,7 @@ image_output = os.path.join(directory_output, 'pic')
 os.makedirs(image_output, exist_ok=True)
 
 # setup model & optimizer
-model = models.Model('data/obj/sphere/sphere_642.obj', args=args)
+model = models.Model('data/obj/sphere_642.obj', args=args)
 
 optimizer = nn.Adam(model.model_param(), args.learning_rate)
 
